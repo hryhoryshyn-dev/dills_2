@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dillon Thomas Coaching | Elite Personal Training</title>
+  <meta name="description" content="Dillon Thomas Coaching: Olympic lifting, calisthenics, CrossFit, fat loss and everyday personal training.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+  <!-- PRELOADER -->
+  <div class="loader" id="loader">
+    <img src="images/logo-white.png" alt="Dillon Thomas Coaching">
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+    <p class="loader__count"><span id="loaderCount">0</span>%</p>
+  </div>
+
+  <!-- CUSTOM CURSOR (desktop only) -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"><span id="cursorText"></span></div>
+
+  <!-- Film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="#top" class="logo"><img src="images/logo-white.png" alt="Dillon Thomas Coaching"></a>
+    <a href="#book" class="header__book magnetic">Book a session</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__lines"><i></i><i></i></span>
+    </button>
+  </header>
+
+  <!-- FULLSCREEN MENU -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="overlay__img"><img src="images/mirror.jpg" alt=""></div>
+    <nav class="overlay__nav">
+      <a href="#manifesto"><small>01</small>Philosophy</a>
+      <a href="#disciplines"><small>02</small>Disciplines</a>
+      <a href="#coach"><small>03</small>The Coach</a>
+      <a href="#gallery"><small>04</small>Gallery</a>
+      <a href="#book"><small>05</small>Book</a>
+    </nav>
+    <div class="overlay__info">
+      <a href="mailto:your@email.com">your@email.com</a>
+      <a href="tel:+440000000000">07000 000000</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media" data-parallax="0.25">
+        <img src="images/portrait.jpg" alt="Dillon Thomas">
+      </div>
+      <div class="hero__shade"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow fade-up">Elite Personal Training</p>
+        <h1 class="hero__title">
+          <span class="split chrome">Dillon</span>
+          <span class="split chrome">Thomas</span>
+        </h1>
+        <div class="hero__row fade-up">
+          <p>Olympic Lifting<span>/</span>Calisthenics<span>/</span>CrossFit</p>
+          <a href="#book" class="btn-round magnetic" data-cursor="Book">
+            <span>Start<br>now</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__side fade-up">
+        <span>Fat loss</span><span>Weight loss</span><span>Everyday training</span>
+      </div>
+      <a href="#manifesto" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- MANIFESTO with inline images -->
+    <section class="manifesto" id="manifesto">
+      <p class="label">— Philosophy</p>
+      <h2 class="manifesto__text">
+        I build
+        <span class="pill-img"><img src="images/group.jpg" alt=""></span>
+        strength, sharpen
+        <span class="pill-img"><img src="images/mirror.jpg" alt=""></span>
+        skill and forge an
+        <span class="pill-img"><img src="images/bike.jpg" alt=""></span>
+        engine that <em class="chrome">doesn't quit.</em>
+      </h2>
+      <div class="manifesto__cols">
+        <p>No random workouts. No guesswork. Every session has a purpose, every programme has a plan, and every rep is coached.</p>
+        <p>Whether you're chasing a heavier snatch, your first muscle-up, or simply want to lose weight and feel good again, the standard is the same.</p>
+      </div>
+    </section>
+
+    <!-- HORIZONTAL SCROLL DISCIPLINES -->
+    <section class="hscroll" id="disciplines">
+      <div class="hscroll__sticky">
+        <div class="hscroll__head">
+          <p class="label">— Disciplines</p>
+          <p class="hscroll__progress"><span id="hProgress"></span></p>
+        </div>
+        <div class="hscroll__track" id="hTrack">
+          <article class="dcard" data-cursor="Drag">
+            <div class="dcard__img"><img src="images/portrait.jpg" alt=""></div>
+            <div class="dcard__body">
+              <span class="dcard__num">01</span>
+              <h3>Olympic<br>Lifting</h3>
+              <p>Snatch, clean &amp; jerk. Positions, speed and power, built with patience and precision.</p>
+            </div>
+          </article>
+          <article class="dcard" data-cursor="Drag">
+            <div class="dcard__img"><img src="images/mirror.jpg" alt=""></div>
+            <div class="dcard__body">
+              <span class="dcard__num">02</span>
+              <h3>Calis&shy;thenics</h3>
+              <p>Pull-ups, muscle-ups, handstands. Total control of your own bodyweight.</p>
+            </div>
+          </article>
+          <article class="dcard" data-cursor="Drag">
+            <div class="dcard__img"><img src="images/bike.jpg" alt=""></div>
+            <div class="dcard__body">
+              <span class="dcard__num">03</span>
+              <h3>Cross&shy;Fit</h3>
+              <p>Engine, gymnastics and barbell work. Conditioning that carries into everything.</p>
+            </div>
+          </article>
+          <article class="dcard" data-cursor="Drag">
+            <div class="dcard__img"><img src="images/rower.jpg" alt=""></div>
+            <div class="dcard__body">
+              <span class="dcard__num">04</span>
+              <h3>Fat &amp;<br>Weight Loss</h3>
+              <p>Lose fat, keep muscle. Smart training and simple habits that actually last.</p>
+            </div>
+          </article>
+          <article class="dcard" data-cursor="Drag">
+            <div class="dcard__img"><img src="images/group.jpg" alt=""></div>
+            <div class="dcard__body">
+              <span class="dcard__num">05</span>
+              <h3>Everyday<br>Training</h3>
+              <p>Move better, feel stronger, have more energy. Fitness built around your life.</p>
+            </div>
+          </article>
+          <a href="#book" class="dcard dcard--cta magnetic">
+            <span>Find your<br><em class="chrome">discipline</em></span>
+            <i>→</i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__inner" id="marquee">
+        <span>Strength</span><span class="o">Skill</span><span>Engine</span><span class="o">Discipline</span>
+        <span>Strength</span><span class="o">Skill</span><span>Engine</span><span class="o">Discipline</span>
+      </div>
+    </div>
+
+    <!-- COACH -->
+    <section class="coach" id="coach">
+      <div class="coach__media">
+        <div class="reveal-mask"><img src="images/mirror.jpg" alt="Dillon Thomas" data-parallax="-0.08"></div>
+      </div>
+      <div class="coach__text">
+        <p class="label">— The Coach</p>
+        <h2>Coaching is a <em class="chrome">craft.</em></h2>
+        <p>I'm Dillon. I specialise in Olympic lifting, calisthenics and CrossFit, and I bring the same detail to every client, whether they're stepping into a gym for the first time or chasing competition numbers.</p>
+        <p>You bring the effort. I bring the plan, the coaching and the accountability.</p>
+        <!-- Add real qualifications here -->
+        <ul class="coach__list">
+          <li><span>01</span>Personalised programming</li>
+          <li><span>02</span>Technique-first coaching</li>
+          <li><span>03</span>Progress you can measure</li>
+          <li><span>04</span>Nutrition &amp; habit guidance</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALLERY: 3D tilt -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__head">
+        <p class="label">— In the room</p>
+        <h2>The <em class="chrome">work</em> speaks.</h2>
+      </div>
+      <div class="gallery__grid">
+        <figure class="tilt t1" data-cursor="View"><img src="images/rower.jpg" alt="Recovering after a rowing set"></figure>
+        <figure class="tilt t2" data-cursor="View"><img src="images/bike.jpg" alt="Coaching on the bike"></figure>
+        <figure class="tilt t3" data-cursor="View"><img src="images/group.jpg" alt="Group warm-up"></figure>
+        <figure class="tilt t4" data-cursor="View"><img src="images/portrait.jpg" alt="Dillon Thomas"></figure>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="book" id="book">
+      <div class="book__bg"><img src="images/group.jpg" alt=""></div>
+      <div class="book__inner">
+        <div class="book__text">
+          <p class="label">— Begin</p>
+          <h2>Your next level<br>starts with <em class="chrome">one call.</em></h2>
+          <p>Free consultation. No contracts, no pressure. Just an honest conversation about where you are and where you want to be.</p>
+        </div>
+        <form class="glass" id="form" novalidate>
+          <div class="field">
+            <input type="text" name="name" id="f-name" placeholder=" " required>
+            <label for="f-name">Your name</label>
+          </div>
+          <div class="field">
+            <input type="email" name="email" id="f-email" placeholder=" " required>
+            <label for="f-email">Email address</label>
+          </div>
+          <div class="field">
+            <select name="goal" id="f-goal" required>
+              <option value="" disabled selected hidden></option>
+              <option>Olympic Lifting</option>
+              <option>Calisthenics</option>
+              <option>CrossFit</option>
+              <option>Fat / Weight Loss</option>
+              <option>Everyday Training</option>
+            </select>
+            <label for="f-goal">Your goal</label>
+          </div>
+          <div class="field">
+            <textarea name="message" id="f-msg" rows="3" placeholder=" "></textarea>
+            <label for="f-msg">Tell me more (optional)</label>
+          </div>
+          <button type="submit" class="submit magnetic" data-cursor="Send">
+            <span>Request consultation</span><i>→</i>
+          </button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="mailto:your@email.com" class="footer__mail">your@email.com</a>
+      <div class="footer__links">
+        <a href="tel:+440000000000">07000 000000</a>
+        <a href="#">Instagram</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+    <p class="footer__giant chrome">DT Coaching</p>
+    <p class="footer__copy">&copy; <span id="year"></span> Dillon Thomas Coaching</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
